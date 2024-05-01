@@ -1,0 +1,125 @@
+/* ==== import goole file link ==== */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+/* ==== body css start ==== */
+body {
+  background-color: #e3f2fd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+}
+/* ==== body css end ==== */
+.container {
+  background-color: #fff;
+  width: 450px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  padding: 20px;
+}
+/* ==== todo app css start ==== */
+.container .task-input {
+  display: flex;
+  gap: 10px;
+}
+.container .task-input input[type="text"] {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: 1.5px solid #b6a4a4;
+  border-radius: 5px;
+  outline: 0;
+}
+.container .task-input input[type="text"]:focus {
+  border: 1.5px solid #8f71ff;
+}
+.container .task-input input[type="submit"] {
+  padding: 0px 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #8f71ff;
+  color: #fff;
+}
+.task-items .task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e3f2fd;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+.task-items .task-item:last-child {
+  margin-bottom: 0px;
+}
+.task-item .task-list {
+  display: flex;
+  align-items: center;
+}
+.task-item .task-list input {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.task-item .task-list p {
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.task-item .task-list p.complete-task {
+  text-decoration: line-through;
+}
+.task-item .task-controls {
+  display: flex;
+  align-items: center;
+}
+.task-item .task-controls i {
+  font-size: 16px;
+  width: 35px;
+  height: 35px;
+  background-color: #8f71ff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.task-item .task-controls i:first-child {
+  margin-right: 10px;
+}
+.container .task-counter p {
+  font-size: 17px;
+  padding-top: 15px;
+}
+.error-message {
+  background-color: #fff;
+  padding: 20px 0px;
+  width: 450px;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: none;
+}
+.error-message p {
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #eb4949;
+}
+.error-message.show-error {
+  display: block;
+}
+ul.task-items .task-item:first-child {
+  margin-top: 15px;
+}
+/* ==== todo app css end ==== */

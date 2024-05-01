@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+    <!-- ==== fontawsome cdn link ==== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- ==== css file link ==== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ==== todo app section start ==== -->
+    <div class="container">
+      <div class="task-input">
+        <input class="new-task" type="text" placeholder="Create your task..." />
+        <input class="add-task" type="submit" value="Add task" />
+      </div>
+      <div class="task-counter">
+        <p>You have <span class="counter-value">0</span> task(s) to complete</p>
+      </div>
+      <div class="list-container">
+        <ul class="task-items"></ul>
+      </div>
+    </div>
+    <div class="error-message">
+      <p>task empty!</p>
+    </div>
+    <!-- ==== todo app section end ==== -->
+
+    <!-- ==== js file lonk ==== -->
+    <script src="./script.js"></script>
+  </body>
+</html>
